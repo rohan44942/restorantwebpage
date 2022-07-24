@@ -8,21 +8,20 @@
         body {
             font-family: latha;
             color: white;
-            background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65),
-                    rgba(0, 0, 0, .38), rgba(0, 0, 0, 0));
+            background: linear-gradient(rgba(239, 239, 239, 0.975), rgba(0, 0, 0, .65),
+                    rgba(15, 12, 12, 0.38), rgba(0, 0, 0, 0));
+
             background-image: url(food6.jpeg);
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-
-
 
         }
 
         .box {
             width: 900px;
             float: right;
-             
+
 
         }
 
@@ -37,6 +36,7 @@
             text-decoration: none;
             color: rgb(89, 74, 74);
             text-decoration: solid;
+            font-size: 20px;
         }
 
         .box ul li :hover {
@@ -110,6 +110,8 @@
             color: rgb(0, 0, 0);
             text-align: center;
             margin-left: 400px;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
 
@@ -119,9 +121,14 @@
             padding: 5px;
             padding-bottom: 5px;
             color: rgb(218, 223, 213);
+            margin-left: 200px;
+           margin-right: 200px;
+           height: fit-content;
+            
         }
 
         .first-menu {
+
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -193,23 +200,26 @@
         input[type=submit]:hover {
             background-color: #d6a8a8;
         }
-         /* #link{
+
+        /* #link{
             
             color: rgb(81, 175, 226);
             padding-left: 10px;
            
         } */
-        .container form, a{
-             color: aliceblue;
+        .container form,
+        a {
+            color: aliceblue;
             padding: 10px;
             margin: 14px auto;
              
-        }
-        footer {
-   background-color: rgb(51, 95, 95);
-   text-align: center;
-}
 
+        }
+
+        footer {
+            background-color: rgb(51, 95, 95);
+            text-align: center;
+        }
     </style>
 
 <body>
@@ -222,7 +232,7 @@
                 <a href="">🧾MENU</a>
             </li>
             <li>
-                <a href="">🚚 Online order-first</a>
+                <a href="">🚚 order</a>
             </li>
             <li>
                 <a href=""> 👯‍♀️Team</a>
@@ -307,15 +317,17 @@
 
     </div>
     <div class="menu-content">
-        <h5>fruit juice</h4><span>$90</span></h5>
-        <p>this will bring you all your energy instantly just after one ship</p>
+        <u>
+            <h5>fruit juice</h4><span>$1</span></h5>
+            <p>this will bring you all your energy instantly just after one ship</p>
+        </u>
     </div>
     <div class="first-menu">
         <img src="blog-2.jpg" alt="">
 
     </div>
     <div class="menu-content">
-        <h5>thali</h4><span>$100</span></h5>
+        <h5>thali</h4><span>$5</span></h5>
         <p>When traveling in most regions of India, you’ll find local restaurants serving thali — a platter offering
             the
             choicest dishes specific to that region.</p>
@@ -325,18 +337,18 @@
     </div>
 
     <div class="menu-content">
-        <h5>rice</h4><span>$40</span></h5>
+        <h5>rice</h4><span>$2</span></h5>
         <p> fried rice in very afforadael prices with delicius taste </p>
     </div>
     <div class="menu-column">
-        <h4 style="color:rgb(12, 11, 11) ;font-size:40px;">dinner</h4>
+        <h4 style="color:rgb(12, 11, 11) ;font-size:40px ; text-align: center;"> <u>DINNER</u></h4>
     </div>
     <div class="first-menu">
         <img src="gallary-12.jpg" alt="">
     </div>
 
     <div class="menu-content">
-        <h5>italian dish</h4><span>$90</span></h5>
+        <h5>italian dish</h4><span>$10</span></h5>
         <p>this dish will make your day. this is special dish by our cafe</p>
     </div>
     <div class="first-menu">
@@ -344,7 +356,7 @@
 
     </div>
     <div class="menu-content">
-        <h5>froot salad</h4><span>$10</span></h5>
+        <h5>fruit salad</h4><span>$1</span></h5>
         <p>When traveling in most regions of India, you’ll find local restaurants serving a very healthy fruit salad — a
             platter
             offering the choicest dishes specific to that region.</p>
@@ -354,11 +366,22 @@
 
     </div>
     <div class="menu-content">
-        <h5>frech dish</h4><span>$40</span></h5>
+        <h5>french dish</h4><span>$4</span></h5>
         <p> In very afforadael prices with delicius taste </p>
     </div>
+    <div class="first-menu">
+        <img src="blog-4.jpg" alt="">
+
     </div>
-    <div class="container"    >
+    <div class="menu-content">
+        <h5>
+            <nimboo-pani></nimboo-pani>
+            </h4><span>$4</span>
+        </h5>
+        <p> it's a refreshing drink in hot summer usally got drinked in northern india</p>
+    </div>
+    </div>
+    <div class="container">
         <form action="action_page.php">
 
             <label for="fname">First Name</label>
@@ -378,15 +401,15 @@
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
             <a href="https://www.zomato.com/">Submit</a>
-             
-             
+
+
 
         </form>
     </div>
     <footer>
         <p style=" height: 50px"> &#169;
-          Copyright 2050 by nobody. All rights reserved</p>
-      </footer>
+            Copyright 2050 by nobody. All rights reserved</p>
+    </footer>
     <div> <a name="check"></a>
 
         <a href="#top" style="color:blue;">Back to Top</a>
