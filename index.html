@@ -92,7 +92,7 @@
         .opt form,
         input[type="button"] {
             background-color: rgb(1, 1, 1);
-            color: rgb(239, 239, 239);
+            color: rgba(239, 239, 239, 0.849);
             padding: 10px;
             margin: 14px auto;
             padding-right: 50px;
@@ -101,40 +101,43 @@
 
         form,
         input[type="button"]:hover {
-            background-color: green;
+            background-color: rgb(39, 38, 38);
+            border-radius: 10px;
         }
 
         .menu-content {
-            color: black;
+            color: rgb(0, 0, 0);
             text-align: center;
             margin-left: 400px;
 
         }
 
         .container {
-            border-radius: 5px;
-            background-color: #0f0c0c;
-            padding: 20px;
+            border-radius: 1px;
+            background-color: #dfd7d7;
+            padding: 5px;
+            padding-bottom: 5px;
+            color: rgb(218, 223, 213);
         }
 
         .first-menu {
             display: block;
             margin-left: auto;
-            margin-right: auto ;
+            margin-right: auto;
             width: 50%;
-           
+
         }
 
         .menu-content {
 
             border: 5px;
             border-radius: 50px;
-           margin-right: auto;
-           margin-left: auto;
+            margin-right: auto;
+            margin-left: auto;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: rgb(47, 45, 74);
-            
-           
+
+
 
         }
 
@@ -160,6 +163,38 @@
             float: right;
             margin-top: 30px;
 
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(98, 114, 110);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+
+
+        input[type=submit] {
+            background-color: #fcfcfc;
+            color: rgb(128, 88, 88);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #d6a8a8;
+        }
+        .menu-content a{
+            box-sizing: border-box;
+            color: red;
         }
     </style>
 
@@ -220,7 +255,12 @@
         <div class="text-container">
             <input type="text" list="programmingLanguages" placeholder="Enter Here" />
             <datalist id="programmingLanguages">
-                <option value="chicken"> chicken </option>
+                <option value="chicken">
+                    <a name="chicken"></a>
+
+                    <a href="#chicken">chicken</a>
+
+                </option>
                 <option value="juice">juice</option>
                 <option value="cold-coffee">cold-coffee</option>
                 <option value="biryani">biryani</option>
@@ -231,7 +271,7 @@
                 <option value="panir-tikka">panir-tikka</option>
                 <option value="thali">thali</option>
                 <option value="specal-thali">specal-thali</option>
-                
+
             </datalist>
         </div>
 
@@ -291,7 +331,8 @@
     </div>
     <div class="menu-content">
         <h5>froot salad</h4><span>$10</span></h5>
-        <p>When traveling in most regions of India, you’ll find local restaurants serving a very healthy fruit salad — a platter
+        <p>When traveling in most regions of India, you’ll find local restaurants serving a very healthy fruit salad — a
+            platter
             offering the choicest dishes specific to that region.</p>
     </div>
     <div class="first-menu">
@@ -300,15 +341,38 @@
     </div>
     <div class="menu-content">
         <h5>frech dish</h4><span>$40</span></h5>
-        <p>    In very afforadael prices with delicius taste </p>
+        <p> In very afforadael prices with delicius taste </p>
     </div>
     </div>
+    <div class="container"    >
+        <form action="action_page.php">
 
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">india</option>
+                <option value="australia">Australia</option>
 
+                <option value="usa">USA</option>
+            </select>
 
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <a href="https://iiitkota.ac.in/">Submit</a>
+             
+             
 
+        </form>
+    </div>
+    <div1> <a name="check"></a>
+
+        <a href="#top" style="color:blue;">Back to Top</a>
+    </div1>
 
 
 </body>
